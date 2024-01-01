@@ -18,12 +18,12 @@ body
     top: 0
     left: 0
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     align-items: center
 
 .tres-barras-container
         display: flex
-        justify-content: space-between 
+        justify-content: space-around 
         flex-direction: column // as divs de barra ficam em coluna um abaixo do outro
         margin-left: 1rem 
         height: 25px
@@ -55,8 +55,8 @@ body
     background-color: $main-color
     display: flex
     margin-left: auto // empurra div para o final (à direita) do meu container
-    margin-right: 2.5rem
-    justify-content: center
+    margin-right: 2rem
+    justify-content: space-around
     align-items: center
     gap: 18px
     button
@@ -102,7 +102,7 @@ body
         display: none
     .nav-container
         display: flex
-        font-size: 1.2rem
+        font-size: 1rem
     .gmail-button
         font-size: 1.8rem
     .github-button
@@ -115,7 +115,7 @@ body
         display: none
     .nav-container
         display: flex
-        font-size: 1.2rem
+        font-size: 1.05rem
     .gmail-button
         font-size: 1.8rem
     .github-button
@@ -128,24 +128,24 @@ body
         display: none
     .nav-container
         display: flex
-        font-size: 1.4rem
+        font-size: 1.15rem
     .social-icons-container
         margin-right: 3rem
     .gmail-button
-        font-size: 2rem
+        font-size: 1.8rem
     .github-button
-        font-size: 2rem
+        font-size: 1.8rem
     .linkedin-button
-        font-size: 2rem
+        font-size: 1.8rem
 
 @media screen and (min-width: $xl)
     .tres-barras-container
         display: none
     .nav-container
         display: flex
-        font-size: 1.4rem
+        font-size: 1.2rem
     .social-icons-container
-        margin-right: 3rem
+        margin-right: 3.5rem
     .gmail-button
         font-size: 2rem
     .github-button
@@ -160,13 +160,33 @@ body
         display: flex
         font-size: 1.4rem
     .social-icons-container
-        margin-right: 3rem
+        margin-right: 4rem
+        gap: 22px
     .gmail-button
-        font-size: 2rem
+        font-size: 2.2rem
     .github-button
-        font-size: 2rem
+        font-size: 2.2rem
     .linkedin-button
-        font-size: 2rem
+        font-size: 2.2rem
+
+@media screen and (min-width: $xxxl)
+    .tres-barras-container
+        display: none
+    .nav-container
+        display: flex
+        font-size: 2.4rem
+    .header-container
+        padding: 2rem
+    .social-icons-container
+        margin-right: 4rem
+        gap: 25px
+    .gmail-button
+        font-size: 3.2rem
+    .github-button
+        font-size: 3.2rem
+    .linkedin-button
+        font-size: 3.2rem
+
 
 
 
