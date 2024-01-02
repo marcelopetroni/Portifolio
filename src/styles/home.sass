@@ -57,6 +57,10 @@ main
     flex-direction: row
     transform: rotate(2deg)
     padding: 0
+    &:hover
+        cursor: pointer
+        transform: scale(1.1)
+        transition: transform 0.3s ease
 
 .frontal
     position: absolute
@@ -64,12 +68,14 @@ main
     z-index: 1
     border: black
     text-shadow: 10px 0 8px black
+    &:hover
+        text-shadow: -8px 0 4px #712f26
 .sombra
     position: relative
     transform: scale(1.03)
     z-index: 1
     margin-left: 0.5rem
-    text-shadow: -8px 0 4px rgba(0,0,0,0.5)
+    text-shadow: -8px 0 4px rgba(0, 0, 0, 0.5)
     
 @keyframes typing
     from   
