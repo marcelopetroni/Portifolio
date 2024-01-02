@@ -11,7 +11,7 @@ const main = () => {
       <div className="titulo-container">
         <h1 className='titulo'>Olá, meu nome é</h1>
         <h1 className='titulo2'>Marcelo Petroni</h1>
-        <h3 className='descricao'>Transformo linhas de código em inovação.</h3>
+        <h3 className='descricao'>Transformo linhas de código em iterfaces.</h3>
         <p className='descricao2'>Sou estudante de Ciência da computação, e também,</p>
         <p className='descricao2'>sou aspirante em Desenvolvimento Front-end ツ</p>
       </div>

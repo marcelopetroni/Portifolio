@@ -5,37 +5,45 @@
 
 body
     font-size: $base-font-size
+    background-color: $main-color
 
 main
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    align-items: center
-    overflow-x: hidden
+    background-color: $main-color
+    width: 100%
+    margin-left: auto
+    margin-right: auto
+    padding-left: 0.5rem 
+    padding-right: 0.5rem
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+    justify-content: center
+    overflow: hidden
     box-sizing: border-box
 
 .titulo-container
     display: flex
-    justify-content: space-between
+    margin-left: 1rem
+    margin-top: 2.5rem
     flex-direction: column
-    margin-left: 2.2rem
-    margin-right: auto
-    margin-top: 15px
     font-family: 'Manrope', sans-serif
 
 .titulo
     text-shadow: 1px 3px 8px rgba(0,0,0,0.2)
-    font-size: 1.4rem
+    font-size: 1rem
     font-weight: 800
+    margin-left: 2px
+
 .titulo2
     text-shadow: 1px 3px 8px rgba(0,0,0,0.2)
     font-weight: 800
     font-size: 2rem
     animation: typing 5s
     margin-bottom: 12px
+
 .descricao
     font-size: 0.8rem
     font-style: italic
+
 .descricao2
     font-size: 0.8rem
     font-family: 'Source Sans 3', sans-serif
@@ -45,10 +53,10 @@ main
     font-family: 'DM Serif Display', sans-serif
     font-size: 5rem
     display: flex
+    justify-content: center
     flex-direction: row
-    flex: auto
-    margin: 0 1rem 0 1rem
     transform: rotate(2deg)
+    padding: 0
 
 .frontal
     position: absolute
@@ -58,14 +66,195 @@ main
     text-shadow: 10px 0 8px black
 .sombra
     position: relative
-    transform: scale(1.02)
+    transform: scale(1.03)
     z-index: 1
     margin-left: 0.5rem
-    text-shadow: -8px 0 4px rgba(0,0,0,0.8)
+    text-shadow: -8px 0 4px rgba(0,0,0,0.5)
     
 @keyframes typing
     from   
         width: 0
     to 
         width: fit-content
+
+@media screen and (max-width: $xxs)
+    main
+        max-width: $xxs
+    .descricao
+    .descricao2
+        white-space: normal
+
+@media screen and (min-width: $xs)
+    main
+        max-width: 500px
+
+    .titulo-container
+        margin-left: 1.4rem
+
+    .icon-container
+        width: fit-content
+        margin-left: 2.5rem
+
+    .titulo
+        margin-left: 2px
+        font-size: 1rem
+
+    .titulo2
+        font-size: 2rem
+
+    .descricao
+        font-size: 1rem
+
+    .descricao2
+        font-size: 1rem
+
+@media screen and (min-width: $s)
+    main
+        max-width: $s
+    .titulo-container
+        margin-left: 1.3rem
+    .titulo
+        margin-left: 2px
+        font-size: 1rem
+
+    .titulo2
+        font-size: 2rem
+
+    .descricao
+        font-size: 0.8rem
+
+    .descricao2
+        font-size: 0.8rem
+
+    .icon-container
+        font-size: 5rem
+        width: auto
+        margin-left: 0
+        
+@media screen and (min-width: $m)
+    main
+        max-width: 800px
+    .titulo-container
+        margin-left: 2rem
+
+    .titulo
+        margin-left: 2px
+        font-size: 1.2rem
+
+    .titulo2
+        font-size: 2.2rem
+
+    .descricao
+        font-size: 1rem
+
+    .descricao2
+        font-size: 1rem
+
+    .icon-container
+        font-size: 5rem
+        width: auto
+        margin-left: 0
+
+@media screen and (min-width: $l)
+    main
+        max-width: 1200px
+
+    .titulo-container
+        margin-left: 4rem
+
+    .titulo
+        margin-left: 2px
+        font-size: 1.5rem
+
+    .titulo2
+        font-size: 3rem
+
+    .descricao
+        font-size: 1rem
+
+    .descricao2
+        font-size: 1rem
+
+    .icon-container
+        font-size: 6rem
+        width: auto
+        margin-left: 0
+
+
+@media screen and (min-width: $xl)
+    main
+        max-width: $xl
+
+    .titulo-container
+        margin-left: 4rem
+
+    .titulo
+        margin-left: 2px
+        font-size: 2rem
+
+    .titulo2
+        font-size: 4rem
+
+    .descricao
+        font-size: 1.1rem
+
+    .descricao2
+        font-size: 1.05rem
+
+    .icon-container
+        font-size: 7rem
+        width: auto
+        margin-left: 0
+
+
+@media screen and (min-width: $xxl)
+    main
+        max-width: 1600px
+
+    .titulo-container
+        margin-left: 4rem
+
+    .titulo
+        margin-left: 2px
+        font-size: 2.2rem
+
+    .titulo2
+        font-size: 4.2rem
+
+    .descricao
+        font-size: 1.1rem
+
+    .descricao2
+        font-size: 1.1rem
+
+    .icon-container
+        font-size: 8rem
+        width: auto
+        margin-left: 0
+
+@media screen and (min-width: $xxxl)
+    main
+        max-width: 2560px
+
+    .titulo-container
+        margin-left: 5rem
+
+    .titulo
+        margin-left: 2px
+        font-size: 2.8rem
+
+    .titulo2
+        font-size: 4.8rem
+
+    .descricao
+        font-size: 1.8rem
+
+    .descricao2
+        font-size: 1.8rem
+
+    .icon-container
+        font-size: 10rem
+        width: auto
+        margin-left: 0
+
 
