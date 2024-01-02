@@ -6,25 +6,66 @@
 body
     font-size: $base-font-size
 
+main
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    overflow-x: hidden
+    box-sizing: border-box
+
 .titulo-container
-    text-shadow: 1px 3px 8px rgba(0,0,0,0.2)
-    margin-left: 70px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    margin-left: 2.2rem
+    margin-right: auto
     margin-top: 15px
     font-family: 'Manrope', sans-serif
-    font-weight: 800
 
 .titulo
-    font-size: 2.5rem
+    text-shadow: 1px 3px 8px rgba(0,0,0,0.2)
+    font-size: 1.4rem
+    font-weight: 800
 .titulo2
-    font-size: 3.5rem
-    animation: typing 5s 
-    overflow: hidden
+    text-shadow: 1px 3px 8px rgba(0,0,0,0.2)
+    font-weight: 800
+    font-size: 2rem
+    animation: typing 5s
+    margin-bottom: 12px
+.descricao
+    font-size: 0.8rem
+    font-style: italic
+.descricao2
+    font-size: 0.8rem
+    font-family: 'Source Sans 3', sans-serif
     white-space: nowrap
+
+.icon-container
+    font-family: 'DM Serif Display', sans-serif
+    font-size: 5rem
+    display: flex
+    flex-direction: row
+    flex: auto
+    margin: 0 1rem 0 1rem
+    transform: rotate(2deg)
+
+.frontal
+    position: absolute
+    color: #fbe6ca
+    z-index: 1
+    border: black
+    text-shadow: 10px 0 8px black
+.sombra
+    position: relative
+    transform: scale(1.02)
+    z-index: 1
+    margin-left: 0.5rem
+    text-shadow: -8px 0 4px rgba(0,0,0,0.8)
     
 @keyframes typing
     from   
         width: 0
     to 
-        width: 18rem
-    
+        width: fit-content
 

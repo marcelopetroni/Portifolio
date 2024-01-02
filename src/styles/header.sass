@@ -12,18 +12,18 @@ body
    
 .header-container
     background-color: $main-color 
+    overflow-x: hidden
     width: 100%
     height: 100px
     margin: 0
     top: 0
     left: 0
     display: flex
-    justify-content: space-around
+    justify-content: space-between
     align-items: center
 
 .tres-barras-container
         display: flex
-        justify-content: space-around 
         flex-direction: column // as divs de barra ficam em coluna um abaixo do outro
         margin-left: 1rem 
         height: 25px
@@ -55,8 +55,7 @@ body
     background-color: $main-color
     display: flex
     margin-left: auto // empurra div para o final (à direita) do meu container
-    margin-right: 2rem
-    justify-content: space-around
+    margin-right: 1.5rem
     align-items: center
     gap: 18px
     button
@@ -87,9 +86,21 @@ body
         cursor: pointer
         transform: scale(1.15)
 
+@media screen and (max-width: $xxs)
+    .nav-container
+        display: none
+    .social-icons-container
+        margin-right: 0.5rem
+    .gmail-button
+        font-size: 1.8rem
+    .github-button
+        font-size: 1.8rem
+    .linkedin-button
+        font-size: 1.8rem
+
 @media screen and (min-width: $xs)
     .nav-container
-        display: none 
+        display: none
     .gmail-button
         font-size: 1.8rem
     .github-button
@@ -103,6 +114,8 @@ body
     .nav-container
         display: flex
         font-size: 1rem
+    .social-icons-container
+        margin-right: 2rem
     .gmail-button
         font-size: 1.8rem
     .github-button
@@ -116,6 +129,8 @@ body
     .nav-container
         display: flex
         font-size: 1.05rem
+    .social-icons-container
+        margin-right: 2rem
     .gmail-button
         font-size: 1.8rem
     .github-button
@@ -128,7 +143,7 @@ body
         display: none
     .nav-container
         display: flex
-        font-size: 1.15rem
+        font-size: 1.05rem
     .social-icons-container
         margin-right: 3rem
     .gmail-button
@@ -143,7 +158,7 @@ body
         display: none
     .nav-container
         display: flex
-        font-size: 1.2rem
+        font-size: 1.1rem
     .social-icons-container
         margin-right: 3.5rem
     .gmail-button
@@ -158,25 +173,25 @@ body
         display: none
     .nav-container
         display: flex
-        font-size: 1.4rem
+        font-size: 1.3rem
     .social-icons-container
         margin-right: 4rem
         gap: 22px
     .gmail-button
-        font-size: 2.2rem
+        font-size: 2.3rem
     .github-button
-        font-size: 2.2rem
+        font-size: 2.3rem
     .linkedin-button
-        font-size: 2.2rem
+        font-size: 2.3rem
 
 @media screen and (min-width: $xxxl)
     .tres-barras-container
         display: none
     .nav-container
         display: flex
-        font-size: 2.4rem
+        font-size: 1.8rem
     .header-container
-        padding: 2rem
+        padding: 2rem 1rem 2rem 1rem
     .social-icons-container
         margin-right: 4rem
         gap: 25px
