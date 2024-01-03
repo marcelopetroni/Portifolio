@@ -21,7 +21,8 @@ main
     box-sizing: border-box
 
 .titulo-container
-    display: flex
+    min-width: 0
+    white-space: nowrap
     margin-left: 1rem
     margin-top: 2.5rem
     flex-direction: column
@@ -57,11 +58,11 @@ main
     flex-direction: row
     transform: rotate(2deg)
     padding: 0
+    user-select: none
     &:hover
-        cursor: pointer
         transform: scale(1.1)
         transition: transform 0.3s ease
-
+    
 .frontal
     position: absolute
     color: #fbe6ca
@@ -69,13 +70,15 @@ main
     border: black
     text-shadow: 10px 0 8px black
     &:hover
-        text-shadow: -8px 0 4px #712f26
+        cursor: pointer
+
 .sombra
     position: relative
     transform: scale(1.03)
     z-index: 1
     margin-left: 0.5rem
     text-shadow: -8px 0 4px rgba(0, 0, 0, 0.5)
+
     
 @keyframes typing
     from   
@@ -86,7 +89,7 @@ main
 @media screen and (max-width: $xxs)
     main
         max-width: $xxs
-    .descricao
+    .descricao,
     .descricao2
         white-space: normal
 
@@ -199,13 +202,13 @@ main
         font-size: 2rem
 
     .titulo2
-        font-size: 4rem
+        font-size: 3.5rem
 
     .descricao
-        font-size: 1.1rem
+        font-size: 1.2rem
 
     .descricao2
-        font-size: 1.05rem
+        font-size: 1.2rem
 
     .icon-container
         font-size: 7rem
@@ -222,16 +225,16 @@ main
 
     .titulo
         margin-left: 2px
-        font-size: 2.2rem
+        font-size: 2rem
 
     .titulo2
-        font-size: 4.2rem
+        font-size: 4rem
 
     .descricao
-        font-size: 1.1rem
+        font-size: 1.3rem
 
     .descricao2
-        font-size: 1.1rem
+        font-size: 1.2rem
 
     .icon-container
         font-size: 8rem
@@ -243,7 +246,7 @@ main
         max-width: 2560px
 
     .titulo-container
-        margin-left: 5rem
+        margin-left: 6rem
 
     .titulo
         margin-left: 2px
