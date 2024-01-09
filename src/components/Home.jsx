@@ -1,5 +1,10 @@
 import React from 'react'
 import "../styles/home.sass";
+import Card from './Card';
+import BuscadorDecCep from '../projects/buscadorCep/BuscadorDeCep';
+import Crud from '../projects/crud/Crud';
+import Landingpage from '../projects/landingPage/Landingpage';
+import TodoList from '../projects/todoList/TodoList';
 
 const main = () => {
   return (
@@ -18,6 +23,13 @@ const main = () => {
       <div className="icon-container">
         <h1 className='sombra'>M</h1>
         <h1 className='frontal'>M</h1>
+      </div>
+      <h2>Projetos</h2>
+      <div className="cards-container">
+        <Card content = {<Crud/>}/>
+        <Card content = {<TodoList/>}/>
+        <Card content = {<BuscadorDecCep/>}/>
+        <Card content = {<Landingpage/>}/>
       </div>
     </main>
   )
