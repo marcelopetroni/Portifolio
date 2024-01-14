@@ -1,58 +1,72 @@
 @import variaveis
 .card
-    width: 190px
-    height: 254px
-    background: #fbe6ca
+    font-family: 'Manrope', sans-serif
+    width: 260px
+    height: fit-content
+    background: #2b434e
     border-radius: 15px
-    box-shadow: 1px 5px 60px 0px black
+    box-shadow: 1px 5px 60px 0px rgba(0, 0, 0, 0.3)
+    margin-bottom: 1.5rem
 
 
 .card .card-border-top 
     width: 60%
     height: 3%
-    background: black
+    background: #e0f3fd
     margin: auto
     border-radius: 0px 0px 15px 15px
 
+.content
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
 
-.card span 
+.content span 
     font-weight: 600
-    color: black
+    color: #e0f3fd
     text-align: center
     display: block
     padding-top: 10px
-    font-size: 16px
+    font-size: 1.3rem
 
 
-.card .job 
+.content .job 
     font-weight: 400
-    color: black
+    color: #e0f3fd
     display: block
     text-align: center
     padding-top: 3px
     font-size: 12px
 
 
-.card .img 
-    width: 70px
-    height: 80px
-    background: black
+.content .img 
+    width: 80%
+    height: auto
+    background: transparent
     border-radius: 15px
-    margin: auto
-    margin-top: 25px
+    margin-top: 0.6rem
+    margin-bottom: 0.6rem
 
+.imagem
+  border-radius: 0.4rem
+  width: 100% // Ajusta a largura da imagem para ocupar 100% da largura da div
+  height: auto // Mantém a proporção da imagem ajustando automaticamente a altura
+  object-fit: cover // Mantém a proporção da imagem e a corta para cobrir a div
 
-.card button 
+.content button 
     padding: 8px 25px
     display: block
     margin: auto
     border-radius: 8px
     border: none
-    margin-top: 30px
-    background: black
-    color: white
+    margin-top: 0.8rem
+    margin-bottom: 0.8rem
+    color: #252525
     font-weight: 600
+    background: #e0f3fd
 
 
-.card button:hover 
-    background: black
+.content button:hover 
+    cursor: pointer
+    transform: scale(1.1)
