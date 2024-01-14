@@ -3,13 +3,15 @@
     margin: 0
     padding: 0
 
+#root 
+    background: $main-color
+    /*animation: gradient 4s infinite alternate*/
+    background-size: 400%
+
 body
     font-size: $base-font-size
-    background-color: $main-color
 
 main
-    background-color: $main-color
-    width: 100%
     margin-left: auto
     margin-right: auto
     padding-left: 0.5rem 
@@ -21,34 +23,47 @@ main
     box-sizing: border-box
     gap: 1rem
 
+//@keyframes gradient 
+//    0% 
+//       background-position: right
+//    100% 
+//        background-position: left
+
 .titulo-container
     min-width: 0
     white-space: nowrap
     margin-left: 1rem
     margin-top: 2.5rem
     flex-direction: column
-    font-family: 'Manrope', sans-serif
+    font-family: 'Libre Bodoni', sans-serif
 
 .titulo
+    color: #253b46
     text-shadow: 1px 3px 8px rgba(0,0,0,0.2)
-    font-size: 1rem
+    font-size: 1.2rem
     font-weight: 800
     margin-left: 2px
 
 .titulo2
+    color: #253b46
     text-shadow: 1px 3px 8px rgba(0,0,0,0.2)
     font-weight: 800
-    font-size: 2rem
+    font-size: 2.5rem
     animation: typing 5s
     margin-bottom: 12px
 
 .descricao
-    font-size: 0.8rem
+    color: #253b46
+    font-size: 1rem
     font-style: italic
+    font-weight: 800
+    font-family: 'Manrope', sans-serif
 
 .descricao2
-    font-size: 0.8rem
-    font-family: 'Source Sans 3', sans-serif
+    color: #253b46
+    font-size: 0.5rem
+    font-family: 'Manrope', sans-serif
+    font-weight: 200
     white-space: nowrap
 
 .icon-container
@@ -57,31 +72,28 @@ main
     display: flex
     justify-content: center
     flex-direction: row
-    transform: rotate(2deg)
+    transform: rotate(6deg)
     padding: 0
     user-select: none
-    &:hover
-        transform: scale(1.1)
-        transition: transform 0.3s ease
     
 .frontal
     position: absolute
-    color: #fbe6ca
+    color: #dfedfa
     z-index: 1
-    border: black
-    text-shadow: 10px 0 8px black
-    &:hover
-        cursor: pointer
+    border: #253b46
+    text-shadow: 10px 0 8px #253b46
 
 .sombra
+    color: #253b46
     position: relative
     transform: scale(1.03)
     z-index: 1
-    margin-left: 0.5rem
+    margin-left: 0.8rem
     text-shadow: -8px 0 4px rgba(0, 0, 0, 0.5)
 
 .cards-container
-    background-color: white
+    background-color: transparent
+    backdrop-filter: blur(10px)
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
     align-items: center
@@ -92,9 +104,10 @@ main
     display: flex
     justify-content: center
     align-items: center
-    font-family: 'Manrope', sans-serif
+    font-family: 'Libre Bodoni', sans-serif
     font-size: 3rem
     margin: 0.8rem
+    color: #3f4562
 
 .about-container
     display: grid
@@ -122,10 +135,10 @@ main
 
     .titulo
         margin-left: 2px
-        font-size: 1rem
+        font-size: 1.2rem
 
     .titulo2
-        font-size: 2rem
+        font-size: 2.5rem
 
     .descricao
         font-size: 1rem
@@ -150,10 +163,10 @@ main
 
     .titulo
         margin-left: 2px
-        font-size: 1rem
+        font-size: 1.2rem
         
     .titulo2
-        font-size: 2rem
+        font-size: 2.4rem
 
     .descricao
         font-size: 0.8rem
@@ -162,7 +175,7 @@ main
         font-size: 0.8rem
 
     .icon-container
-        font-size: 5.5rem
+        font-size: 6rem
         width: auto
         margin-left: 0
         
@@ -183,10 +196,10 @@ main
 
     .titulo
         margin-left: 2px
-        font-size: 1.2rem
+        font-size: 1.3rem
 
     .titulo2
-        font-size: 2.2rem
+        font-size: 2.8rem
 
     .descricao
         font-size: 1rem
@@ -195,7 +208,7 @@ main
         font-size: 1rem
 
     .icon-container
-        font-size: 6rem
+        font-size: 7rem
         width: auto
         margin-left: 0
 
@@ -216,19 +229,19 @@ main
 
     .titulo
         margin-left: 2px
-        font-size: 1.5rem
+        font-size: 1.4rem
 
     .titulo2
-        font-size: 3rem
+        font-size: 3.2rem
 
     .descricao
-        font-size: 1rem
+        font-size: 1.5rem
 
     .descricao2
         font-size: 1rem
 
     .icon-container
-        font-size: 7rem
+        font-size: 8rem
         width: auto
         margin-left: 0
 
@@ -253,16 +266,16 @@ main
         font-size: 2rem
 
     .titulo2
-        font-size: 3.5rem
+        font-size: 3.7rem
 
     .descricao
-        font-size: 1.2rem
+        font-size: 1.6rem
 
     .descricao2
-        font-size: 1.2rem
+        font-size: 1.1rem
 
     .icon-container
-        font-size: 8rem
+        font-size: 10rem
         width: auto
         margin-left: 0
 
@@ -287,16 +300,16 @@ main
         font-size: 2rem
 
     .titulo2
-        font-size: 4rem
+        font-size: 4.2rem
 
     .descricao
-        font-size: 1.3rem
+        font-size: 1.7rem
 
     .descricao2
         font-size: 1.2rem
 
     .icon-container
-        font-size: 8rem
+        font-size: 10rem
         width: auto
         margin-left: 0
 
@@ -320,13 +333,13 @@ main
         font-size: 2.8rem
 
     .titulo2
-        font-size: 4.8rem
+        font-size: 5rem
 
     .descricao
         font-size: 1.8rem
 
     .descricao2
-        font-size: 1.8rem
+        font-size: 1.3rem
 
     .icon-container
         font-size: 10rem
