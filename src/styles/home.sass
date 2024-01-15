@@ -37,13 +37,13 @@ main
     min-width: 0
     white-space: nowrap
     margin-left: 0.8rem
-    margin-top: 2.5rem
+    margin-top: 2.6rem
     font-family: 'Libre Bodoni', sans-serif
 
 .titulo
     color: #253b46
     text-shadow: 1px 3px 8px rgba(0,0,0,0.2)
-    font-size: 1.2rem
+    font-size: 1.4rem
     font-weight: 800
     margin-left: 2px
     text-align: center
@@ -52,14 +52,14 @@ main
     color: #253b46
     text-shadow: 1px 3px 8px rgba(0,0,0,0.2)
     font-weight: 800
-    font-size: 2.5rem
+    font-size: 2.7rem
     animation: typing 5s
     margin-bottom: 12px
     text-align: center
 
 .descricao
     color: #253b46
-    font-size: 1rem
+    font-size: 1.2rem
     font-style: italic
     font-weight: 800
     font-family: 'Manrope', sans-serif
@@ -67,18 +67,21 @@ main
 
 .descricao2
     color: #253b46
-    font-size: 0.7rem
+    font-size: 0.9rem
     font-family: 'Manrope', sans-serif
     font-weight: 200
     text-align: center
     white-space: wrap
-    letter-spacing: 0.2px
+    letter-spacing: -0.1px
 
 .icon-container
+    height: 100%
+    width: 100%
     font-family: 'DM Serif Display', sans-serif
-    font-size: 5rem
+    font-size: 7rem
     display: flex
     justify-content: center
+    align-items: start
     flex-direction: row
     transform: rotate(6deg)
     padding: 0
@@ -105,7 +108,7 @@ main
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
     align-items: center
     justify-items: center
-    row-gap: 1rem
+    gap: 1rem
 
 .projects-title 
     display: flex
@@ -120,9 +123,8 @@ main
     height: 90vh
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
-    align-items: start
+    align-items: center
     justify-items: center
-    padding-top: 6rem
 
 @keyframes typing
     from   
@@ -130,18 +132,21 @@ main
     to 
         width: fit-content
 
-@media screen and (max-width: 300px)
+@media screen and (max-width: 350px)
     main
         max-width: $xxs
+    .titulo
+        font-size: 1.1rem
     .titulo2
-        font-size: 2.2rem
+        font-size: 2.4rem
 
     .descricao
         white-space: nowrap
-        font-size: 0.9rem
+        font-size: 1rem
 
     .descricao2
         max-width: $xxs
+        font-size: 0.7rem
 
 @media screen and (min-width: 400px)
     .titulo
@@ -154,7 +159,7 @@ main
         font-size: 1.2rem
 
     .descricao2
-        font-size: 1rem
+        font-size: 0.9rem
 
 @media screen and (min-width: $xs)
     main
@@ -179,6 +184,9 @@ main
 @media screen and (min-width: $s)
     main
         max-width: $s
+    
+    .icon-container
+        justify-content: center
 
     .projects-title 
         justify-content: start
@@ -187,22 +195,24 @@ main
 
     .about-container
         grid-template-columns: repeat(2, minmax(250px, 1fr))
+        align-items: start
+        padding-top: 6rem
 
     .titulo-container
         margin-left: 1.3rem
 
     .titulo
         margin-left: 2px
-        font-size: 1.2rem
+        font-size: 1.5rem
         
     .titulo2
-        font-size: 2.4rem
+        font-size: 2.8rem
 
     .descricao
-        font-size: 0.8rem
+        font-size: 1.2rem
 
     .descricao2
-        font-size: 0.8rem
+        font-size: 0.9rem
 
     .icon-container
         font-size: 6rem
@@ -226,13 +236,13 @@ main
 
     .titulo
         margin-left: 2px
-        font-size: 1.3rem
+        font-size: 1.6rem
 
     .titulo2
-        font-size: 2.8rem
+        font-size: 2.9rem
 
     .descricao
-        font-size: 1rem
+        font-size: 1.3rem
 
     .descricao2
         font-size: 1rem
@@ -268,7 +278,7 @@ main
         font-size: 1.5rem
 
     .descricao2
-        font-size: 1rem
+        font-size: 1.2rem
 
     .icon-container
         font-size: 8rem
@@ -370,7 +380,8 @@ main
         font-size: 1.8rem
 
     .descricao2
-        font-size: 1.3rem
+        font-size: 1.5rem
+        max-width: 600px
 
     .icon-container
         font-size: 10rem

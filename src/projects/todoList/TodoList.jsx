@@ -7,9 +7,9 @@ const TodoList = () => {
     <div className='content'>
       <span>To do List</span>
       <div className="img">
-        <img src={background} alt="Imagem do projeto To Do List" className='imagem'/>
+        <img src={background} alt="To Do List project image" className='imagem'/>
       </div>
-      <p className="job">Projeto React.js - Vite, é um site com propósito de organizar afazeres por um To Do List.</p>
+      <p className="job">React - Vite Project, it's a simple To Do List made for tasks organization.</p>
       <div className="buttons">
         <button>Repository</button>
         <button>Deploy</button>

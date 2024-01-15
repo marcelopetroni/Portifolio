@@ -5,11 +5,11 @@ import background from './buscadorcep.png';
 const BuscadorDecCep = () => {
   return (
     <div className='content'>
-      <span>CEP Search</span>
+      <span>ZIP Code Search</span>
       <div className="img">
-        <img src={background} alt="Imagem do projeto Buscador de CEP" className='imagem'/>
+        <img src={background} alt="ZIP code engine image" className='imagem'/>
       </div>
-      <p className="job">Projeto React.js de um buscador de Cep que retorna a localização requisitada através de uma Api.</p>
+      <p className="job">React.js project for a ZIP code search engine that returns the requested location through an Api.</p>
       <div className="buttons">
         <button>Repository</button>
         <button>Deploy</button>

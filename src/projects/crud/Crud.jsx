@@ -7,9 +7,9 @@ const Crud = () => {
     <div className='content'>
       <span>Crud</span>
       <div className="img">
-        <img src={background} alt="Imagem do projeto CRUD" className='imagem'/>
+        <img src={background} alt="CRUD project Image" className='imagem'/>
       </div>
-      <p className="job">Projeto com solicitações CRUD feito em React.js Vite + Sass para o front-end e Firebase para o back-end.</p>
+      <p className="job">Project with CRUD requests made in React.js Vite + Sass for the front-end and Firebase for the back-end.</p>
       <div className="buttons">
         <button>Repository</button>
         <button>Deploy</button>
