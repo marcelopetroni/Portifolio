@@ -15,10 +15,10 @@ const header = () => {
         </div>
 
         <div className="nav-container">
-            <a>Sobre</a>
-            <a>Projetos</a>
+            <a>About</a>
+            <a>Projects</a>
             <a>Skills</a>
-            <a>Contatos</a>
+            <a>Contacts</a>
         </div>
         <div className="social-icons-container">
             <button className='linkedin-button'>

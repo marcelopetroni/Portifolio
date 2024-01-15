@@ -5,7 +5,7 @@ import background from './buscadorcep.png';
 const BuscadorDecCep = () => {
   return (
     <div className='content'>
-      <span>Buscador de CEP</span>
+      <span>CEP Search</span>
       <div className="img">
         <img src={background} alt="Imagem do projeto Buscador de CEP" className='imagem'/>
       </div>
