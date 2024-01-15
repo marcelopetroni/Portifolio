@@ -10,7 +10,10 @@ const Crud = () => {
         <img src={background} alt="Imagem do projeto CRUD" className='imagem'/>
       </div>
       <p className="job">Projeto com solicitações CRUD feito em React.js Vite + Sass para o front-end e Firebase para o back-end.</p>
-      <button> Click</button>
+      <div className="buttons">
+        <button>Repository</button>
+        <button>Deploy</button>
+      </div>
     </div>
   )
 }
