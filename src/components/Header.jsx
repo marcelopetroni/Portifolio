@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 const header = () => {
   return (
-    <header className='header-container'>
+    <header id = "about" className='header-container'>
       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet"></link>
         <div className="tres-barras-container">
           <div className="barra"></div>
@@ -15,10 +15,10 @@ const header = () => {
         </div>
 
         <div className="nav-container">
-            <a>About</a>
-            <a>Projects</a>
-            <a>Skills</a>
-            <a>Contacts</a>
+            <a href="#about" >About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skils">Skills</a>
+            <a href="#contacts">Contacts</a>
         </div>
         <div className="social-icons-container">
             <button className='linkedin-button'>

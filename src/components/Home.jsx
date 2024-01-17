@@ -18,8 +18,10 @@ const main = () => {
       <section className='about-container'>
         <div className="titulo-container">
           <h1 className='titulo'>Hey there. My name is</h1>
-          <h1 className='titulo2'>Marcelo Petroni</h1>
-          <h3 className='descricao'>I turn code in responsive interfaces.</h3>
+            <div className="titulo-principal">
+              <h1 className='titulo2'>Marcelo Petroni </h1>
+            </div>
+          <h3 className='descricao'>I turn code in responsive interfaces</h3>
           <p className='descricao2'>I'm currently a Computer Science student and 
           I aim to become a great Front-end developer and hopeful achieve all my goals in life, and of course, be happy along the way.</p>
         </div>
@@ -28,7 +30,7 @@ const main = () => {
           <h1 className='frontal'>M</h1>
         </div>
       </section>
-      <h2 className='projects-title'>Projects</h2>
+      <h2 id = "projects" className='projects-title'>Projects</h2>
       <section className='projects-container'>
         <div className="cards-container">
           <Card content = {<Crud/>}/>

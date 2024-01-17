@@ -30,8 +30,8 @@ main
 //        background-position: left
 
 .titulo-container
-    align-items: center
     justify-content: center
+    align-items: center
     display: flex
     flex-direction: column
     min-width: 0
@@ -48,14 +48,29 @@ main
     margin-left: 2px
     text-align: center
 
+.titulo-principal
+    display: flex
+    align-items: center
+
 .titulo2
     color: #253b46
+    max-width: fit-content
     text-shadow: 1px 3px 8px rgba(0,0,0,0.2)
     font-weight: 800
     font-size: 2.7rem
-    animation: typing 5s
+    border-right: 0.1rem solid black
+    animation: typing 2.5s steps(16), cursor 0.7s step-end infinite alternate
     margin-bottom: 12px
-    text-align: center
+    overflow: hidden
+
+@keyframes typing
+    from
+        width: 0
+    to 
+        width: 100%
+@keyframes cursor
+    50%
+        border-right-color: transparent
 
 .descricao
     color: #253b46
@@ -128,12 +143,6 @@ main
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
     align-items: center
     justify-items: center
-
-@keyframes typing
-    from   
-        width: 0
-    to 
-        width: fit-content
 
 @media screen and (max-width: 350px)
     main
