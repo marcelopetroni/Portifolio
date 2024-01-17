@@ -9,7 +9,7 @@ const Landingpage = () => {
       <div className="img">
         <img src={background} alt="Landing Page project image" className='imagem'/>
       </div>
-      <p className="job"> Projeto de uma Landing page feita em HTML CSS e incorporada ao React.js com intuito de aprender header fixa na página.</p>
+      <p className="job">Landing page Project made in HTML CSS and incorporated into React.js. The aim was to learn how to create a fixed header in a page.</p>
       <div className="buttons">
         <button>Repository</button>
         <button>Deploy</button>

@@ -38,7 +38,78 @@ const main = () => {
           <Card content = {<BuscadorDecCep/>}/>
           <Card content = {<Landingpage/>}/>
         </div>
-      </section>    
+      </section>
+      <h2 id = "skills" className='projects-title'>Skills</h2>    
+      <section className='skills-container'>
+        <div className='skill'>
+          <h4>React.js</h4>
+          <div className="percentage react"></div>
+        </div>
+        <div className='skill'>
+          <h4>React Native</h4>
+          <div className="percentage native"></div>
+        </div>
+        <div className='skill'>
+          <h4>HTML 5</h4>
+          <div className="percentage html"></div>
+        </div>
+        <div className='skill'>
+          <h4>CSS</h4>
+          <div className="percentage css"></div>
+        </div>
+        <div className='skill'>
+          <h4>Sass</h4>
+          <div className="percentage sass"></div>
+        </div>
+        <div className='skill'>
+          <h4>JavaScript</h4>
+          <div className="percentage js"></div>
+        </div>
+        <div className='skill'>
+          <h4>TypeScript</h4>
+          <div className="percentage ts"></div>
+        </div>
+        <div className='skill'>
+          <h4>Java</h4>
+          <div className="percentage java"></div>
+        </div>
+        <div className='skill'>
+          <h4>Python</h4>
+          <div className="percentage python"></div>
+        </div>
+        <div className='skill'>
+          <h4>C/C++</h4>
+          <div className="percentage c"></div>
+        </div>
+        <div className='skill'>
+          <h4>Node.js</h4>
+          <div className="percentage node"></div>
+        </div>
+        <div className='skill'>
+          <h4>Firebase</h4>
+          <div className="percentage firebase"></div>
+        </div>
+        <div className='skill'>
+          <h4>Git</h4>
+          <div className="percentage git"></div>
+        </div>
+        <div className='skill'>
+          <h4>Data Structure</h4>
+          <div className="percentage data"></div>
+        </div>
+        <div className='skill'>
+          <h4>OO Programing</h4>
+          <div className="percentage programing"></div>
+        </div>
+        <div className='skill'>
+          <h4>English</h4>
+          <div className="percentage english"></div>
+        </div>
+        <div className='skill'>
+          <h4>Excel</h4>
+          <div className="percentage excel"></div>
+        </div>
+      </section>
     </main>
   )
 }
