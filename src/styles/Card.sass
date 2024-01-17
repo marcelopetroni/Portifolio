@@ -73,11 +73,6 @@
     background: #e0f3fd
     border: 0.1rem solid black
 
-
-.content button:hover 
-    cursor: pointer
-    transform: scale(1.1)
-
 .buttons
     display: flex
     justify-content: center
@@ -86,3 +81,7 @@
     gap: 0.5rem
 button
     font-family: 'Ubuntu Mono', monospace
+    transition: transform 0.25s ease
+    &:hover
+        cursor: pointer
+        transform: scale(1.18)

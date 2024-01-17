@@ -21,16 +21,16 @@ const header = () => {
             <a href="#contacts">Contacts</a>
         </div>
         <div className="social-icons-container">
-            <button className='linkedin-button'>
-              <TfiLinkedin />
+            <button>
+              <a className='linkedin-button' href='https://www.linkedin.com/in/marcelo-nunes-a8b7a223a/' target="_blank"><TfiLinkedin/></a>
             </button>
 
-            <button className='gmail-button'>
-              <SiGmail/>
+            <button>
+              <a className='gmail-button' href='mailto:marceloapetroni@gmail.com' target="_blank"><SiGmail/></a>
             </button>
            
-            <button className='github-button'>
-              <FaGithub />
+            <button>
+              <a className='github-button' href='https://github.com/marcelopetroni' target="_blank"><FaGithub/></a>
             </button>
         </div>
     </header>

@@ -64,35 +64,43 @@ body
     align-items: center
     gap: 18px
     button
-        transition: transform 0.3s ease
         background: transparent
         border: none
         outline: none
 
 .gmail-button
     font-size: 1.8rem
-    display: flex
-    justify-content: center
-    align-items: center
     color: #253b46
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: transform 0.3s ease
     &:hover
         cursor: pointer
-        transform: scale(1.15)
+        transform: scale(1.1)
+
 .github-button
     font-size: 1.8rem
-    display: flex
-    justify-content: center
-    align-items: center
     color: #253b46
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: transform 0.3s ease
     &:hover
         cursor: pointer
-        transform: scale(1.15)
+        transform: scale(1.1)
+
 .linkedin-button
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-bottom: 0.3rem
     font-size: 1.8rem
     color: #253b46
+    transition: transform 0.3s ease
     &:hover
         cursor: pointer
-        transform: scale(1.15)
+        transform: scale(1.1)
 
 @media screen and (max-width: $xxs)
     .nav-container
@@ -206,11 +214,12 @@ body
         margin-right: 4rem
         gap: 25px
     .gmail-button
-        font-size: 4rem
+        font-size: 3.5rem
     .github-button
-        font-size: 4rem
+        font-size: 3.5rem
     .linkedin-button
-        font-size: 4rem
+        padding-bottom: 0.5rem
+        font-size: 3.5rem
 
 
 
