@@ -133,7 +133,7 @@ main
     justify-content: center
     align-items: center
     font-family: 'Libre Bodoni', sans-serif
-    font-size: 3rem
+    font-size: 3.4rem
     padding-top: 2rem
     margin: 1rem
     color: #2b434e
@@ -142,11 +142,13 @@ main
 .skills-container
     font-family: 'Ubuntu Mono', monospace
     font-size: 1.8rem
-    margin-bottom: 2rem
+    margin-bottom: 3rem
     display: grid
     grid-template-columns: repeat(2, minmax(250px, 1fr))
     align-items: center
+    justify-content: center
     gap: 1rem
+    white-space: nowrap
 
 .skill
     padding-left: 2rem
@@ -172,7 +174,7 @@ main
 .react
     background-color: #0d3c56
     width: 95%    
-       
+
 .native 
     background-color: #2e0d56
     width: 60%
@@ -223,7 +225,7 @@ main
 
 .data 
     background-color: #ec6fb2
-    width: 80%
+    width: 70%
 
 .programing 
     background-color: #c7853e
@@ -254,7 +256,19 @@ main
         max-width: $xxs
         font-size: 0.7rem
 
-@media screen and (min-width: 400px)
+    .skills-container
+        font-size: 1.4rem
+        grid-template-columns: repeat(2, minmax(100px, 1fr))
+
+    .skill
+        padding: 0.5rem
+        
+    .percentage-container
+        width: 7rem
+        height: 1.5rem
+        gap: 0.6rem
+
+@media screen and (min-width: 350px)
     .titulo
         font-size: 1.5rem
 
@@ -266,6 +280,18 @@ main
 
     .descricao2
         font-size: 0.9rem
+    
+    .skills-container
+        font-size: 1.4rem
+        grid-template-columns: repeat(2, minmax(150px, 1fr))
+
+    .skill
+        padding: 0.6rem
+        
+    .percentage-container
+        width: 8rem
+        height: 1.5rem
+        gap: 0.6rem
 
 @media screen and (min-width: $xs)
     main
@@ -286,6 +312,18 @@ main
 
     .descricao2
         font-size: 1rem
+
+    .skills-container
+        font-size: 1.8rem
+        grid-template-columns: repeat(2, minmax(200px, 1fr))
+
+    .skill
+        padding-left: 0.8rem
+        
+    .percentage-container
+        width: 10rem
+        height: 2rem
+        gap: 0.3rem
 
 @media screen and (min-width: $s)
     main
@@ -325,8 +363,14 @@ main
         font-size: 6rem
         width: auto
         margin-left: 0
+
+    .skill
+        padding: 0.4rem 0.4rem 0.4rem 0.4rem
+
     .skills-container
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+        margin-left: 3.5rem
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr))
+        gap: 1.2rem
         
 @media screen and (min-width: $m)
     main
@@ -360,6 +404,8 @@ main
         font-size: 7rem
         width: auto
         margin-left: 0
+    .skills-container
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
 
 @media screen and (min-width: $l)
     main
