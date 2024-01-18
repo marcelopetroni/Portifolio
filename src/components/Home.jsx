@@ -5,8 +5,15 @@ import BuscadorDecCep from '../projects/buscadorCep/BuscadorDeCep';
 import Crud from '../projects/crud/Crud';
 import Landingpage from '../projects/landingPage/Landingpage';
 import TodoList from '../projects/todoList/TodoList';
+import { useInView } from 'react-intersection-observer'; // para lidar com a animação de fade
+import 'intersection-observer'; // biblioteca para ter suporte em todos os navegadores
 
 const main = () => {
+
+  const [projectsRef, projectsInView] = useInView({}); // section de projetos presente na tela
+
+  const [skillsRef, skillsInView] = useInView({}); // section de skills presente na tela
+
   return (
     <main>
       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet"></link>
@@ -30,8 +37,8 @@ const main = () => {
           <h1 className='frontal'>M</h1>
         </div>
       </section>
-      <h2 id = "projects" className='projects-title'>Projects</h2>
-      <section className='projects-container'>
+      <h2 ref={projectsRef} id = "projects" className='projects-title' style={{ opacity: projectsInView ? 1 : 0, animation: projectsInView ? 'fade 2s ease both' : '' }}>Projects</h2>
+      <section ref={projectsRef} className="projects-container" style={{ opacity: projectsInView ? 1 : 0, animation: projectsInView ? 'fade 2s ease both' : '' }}>
         <div className="cards-container">
           <Card content = {<Crud/>}/>
           <Card content = {<TodoList/>}/>
@@ -39,8 +46,8 @@ const main = () => {
           <Card content = {<Landingpage/>}/>
         </div>
       </section>
-      <h2 id = "skills" className='projects-title'>Skills</h2>    
-      <section className='skills-container'>
+      <h2 ref={skillsRef} id = "skills" className='projects-title' style={{ opacity: skillsInView ? 1 : 0, animation: skillsInView ? 'fade 2s ease both' : '' }}>Skills</h2>    
+      <section ref={skillsRef} className='skills-container' style={{ opacity: skillsInView ? 1 : 0, animation: skillsInView ? 'fade 2s ease both' : '' }} >
         <div className='skill'>
           <h4>React.js</h4>
           <div className="percentage-container"><div className="percentage react"></div></div>
