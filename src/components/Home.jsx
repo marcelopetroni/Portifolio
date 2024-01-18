@@ -37,8 +37,8 @@ const main = () => {
           <h1 className='frontal'>M</h1>
         </div>
       </section>
-      <h2 ref={projectsRef} id = "projects" className='projects-title' style={{ opacity: projectsInView ? 1 : 0, animation: projectsInView ? 'fade 2s ease both' : '' }}>Projects</h2>
-      <section ref={projectsRef} className="projects-container" style={{ opacity: projectsInView ? 1 : 0, animation: projectsInView ? 'fade 2s ease both' : '' }}>
+      <h2 ref={projectsRef} id = "projects" className='projects-title' style={{ opacity: projectsInView ? 1 : 0, animation: projectsInView ? 'fade 2s ease' : '' }}>Projects</h2>
+      <section ref={projectsRef} className="projects-container" style={{ opacity: projectsInView ? 1 : 0, animation: projectsInView ? 'fade 2s ease' : '' }}>
         <div className="cards-container">
           <Card content = {<Crud/>}/>
           <Card content = {<TodoList/>}/>
@@ -46,8 +46,8 @@ const main = () => {
           <Card content = {<Landingpage/>}/>
         </div>
       </section>
-      <h2 ref={skillsRef} id = "skills" className='projects-title' style={{ opacity: skillsInView ? 1 : 0, animation: skillsInView ? 'fade 2s ease both' : '' }}>Skills</h2>    
-      <section ref={skillsRef} className='skills-container' style={{ opacity: skillsInView ? 1 : 0, animation: skillsInView ? 'fade 2s ease both' : '' }} >
+      <h2 ref={skillsRef} id = "skills" className='projects-title' style={{ opacity: skillsInView ? 1 : 0, animation: skillsInView ? 'fade 2s ease' : '' }}>Skills</h2>    
+      <section ref={skillsRef} className='skills-container' style={{ opacity: skillsInView ? 1 : 0, animation: skillsInView ? 'fade 2s ease' : '' }} >
         <div className='skill'>
           <h4>React.js</h4>
           <div className="percentage-container"><div className="percentage react"></div></div>
