@@ -1,5 +1,12 @@
 import React from 'react'
 import "../styles/home.sass";
+import { MdEmail } from "react-icons/md";
+import { PiMicrosoftOutlookLogoFill } from "react-icons/pi";
+import { FaGithubSquare } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoPerson } from "react-icons/io5";
+import { BsLinkedin } from "react-icons/bs";
 import Card from './Card';
 import BuscadorDecCep from '../projects/buscadorCep/BuscadorDeCep';
 import Crud from '../projects/crud/Crud';
@@ -13,6 +20,8 @@ const main = () => {
   const [projectsRef, projectsInView] = useInView({}); // section de projetos presente na tela
 
   const [skillsRef, skillsInView] = useInView({}); // section de skills presente na tela
+
+  const [contactsRef, contactsInView] = useInView({}); // section de contatos presente na tela
 
   return (
     <main>
@@ -116,6 +125,32 @@ const main = () => {
           <h4>Excel</h4>
           <div className="percentage-container"><div className="percentage excel"></div></div>
         </div>
+      </section>
+      <h2 ref={contactsRef} id = "contacts" className='projects-title' style={{ opacity: contactsInView ? 1 : 0, animation: contactsInView ? 'fade 2s ease' : '' }}>Contacts</h2>
+      <section className='contacts-container' ref={contactsRef} style={{ opacity: contactsInView ? 1 : 0, animation: contactsInView ? 'fade 2s ease' : '' }}>
+   
+        <div className="contact">
+          <IoPerson /> <h4>Marcelo Petroni</h4>
+        </div>
+        <div className="contact">
+          <FaLocationDot /><h4>Recife - Pe</h4>
+        </div>
+        <div className="contact">
+          <MdEmail /> <h4>marceloapetroni@gmail.com</h4>
+        </div>
+        <div className="contact">
+          <PiMicrosoftOutlookLogoFill /> <h4>marceloapetroni@hotmail.com</h4>
+        </div>
+        <div className="contact">
+          <IoLogoWhatsapp /> <h4>(81) 99915-8289 </h4>
+        </div>
+        <div className="contact">
+          <BsLinkedin /> <h4>https://www.linkedin.com/in/marcelo-nunes-a8b7a223a/</h4>
+        </div>
+        <div className="contact">
+          <FaGithubSquare /> <h4>https://github.com/marcelopetroni</h4>
+        </div>
+  
       </section>
     </main>
   )
