@@ -11,8 +11,8 @@ const BuscadorDecCep = () => {
       </div>
       <p className="job">React.js project for a ZIP code search engine that returns the requested location through an Api.</p>
       <div className="buttons">
-        <button>Repository</button>
-        <button>Deploy</button>
+        <button><a href="https://github.com/marcelopetroni/BuscadorCepReact" target='_blank'>Repository</a></button>
+        <button><a href="https://buscador-cep-react-phi.vercel.app/" target='_blank'>Deploy</a></button>
       </div>
     </div>
   )

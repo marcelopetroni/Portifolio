@@ -11,8 +11,8 @@ const TodoList = () => {
       </div>
       <p className="job">React - Vite Project, it's a simple To Do List made for tasks organization.</p>
       <div className="buttons">
-        <button>Repository</button>
-        <button>Deploy</button>
+        <button><a href="https://github.com/marcelopetroni/ToDoListReact" target='_blank'>Repository</a></button>
+        <button><a href="https://to-do-list-react-bb8y.vercel.app/" target='_blank'>Deploy</a></button>
       </div>
     </div>
   )

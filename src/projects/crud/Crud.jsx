@@ -11,8 +11,8 @@ const Crud = () => {
       </div>
       <p className="job">Project with CRUD requests made in React.js Vite + Sass for the front-end and Firebase for the back-end.</p>
       <div className="buttons">
-        <button>Repository</button>
-        <button>Deploy</button>
+        <button><a href="https://github.com/marcelopetroni/CrudReact" target='_blank'>Repository</a></button>
+        <button><a href="https://crud-react-eight-pink.vercel.app/" target='_blank'>Deploy</a></button>
       </div>
     </div>
   )
