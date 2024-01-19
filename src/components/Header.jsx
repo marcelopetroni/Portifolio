@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import '../styles/Header.sass';
 import { TfiLinkedin } from "react-icons/tfi";
 import { SiGmail } from "react-icons/si";
