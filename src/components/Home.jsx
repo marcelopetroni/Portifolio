@@ -128,12 +128,11 @@ const main = () => {
       </section>
       <h2 ref={contactsRef} id = "contacts" className='projects-title' style={{ opacity: contactsInView ? 1 : 0, animation: contactsInView ? 'fade 2s ease' : '' }}>Contacts</h2>
       <section className='contacts-container' ref={contactsRef} style={{ opacity: contactsInView ? 1 : 0, animation: contactsInView ? 'fade 2s ease' : '' }}>
-   
         <div className="contact">
           <IoPerson /> <h4>Marcelo Petroni</h4>
         </div>
         <div className="contact">
-          <FaLocationDot /><h4>Recife - Pe</h4>
+          <FaLocationDot /><h4>Recife - PE</h4>
         </div>
         <div className="contact">
           <MdEmail /> <h4>marceloapetroni@gmail.com</h4>
@@ -150,7 +149,6 @@ const main = () => {
         <div className="contact">
           <FaGithubSquare /> <h4>https://github.com/marcelopetroni</h4>
         </div>
-  
       </section>
     </main>
   )
