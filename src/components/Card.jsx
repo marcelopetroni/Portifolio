@@ -1,4 +1,4 @@
-import "../styles/Card.sass";
+import "../styles/card.sass";
 import React from 'react';
 
 const Card = ({content}) => {
