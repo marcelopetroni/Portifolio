@@ -2,7 +2,7 @@ import React from 'react';
 import "../styles/footer.sass";
 import { FaRegCopyright } from "react-icons/fa";
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer>
         <FaRegCopyright className='icon'/>
@@ -11,4 +11,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer;

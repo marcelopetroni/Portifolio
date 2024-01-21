@@ -4,7 +4,7 @@ import { TfiLinkedin } from "react-icons/tfi";
 import { SiGmail } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 
-const header = () => {
+const Header = () => {
   return (
     <header id = "about" className='header-container'>
       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet"></link>
@@ -37,4 +37,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header;

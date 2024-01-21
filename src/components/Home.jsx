@@ -15,7 +15,7 @@ import TodoList from '../projects/todoList/TodoList';
 import { useInView } from 'react-intersection-observer'; // para lidar com a animação de fade
 import 'intersection-observer'; // biblioteca para ter suporte em todos os navegadores
 
-const main = () => {
+const Home = () => {
 
   const [projectsRef, projectsInView] = useInView({}); // section de projetos presente na tela
 
@@ -154,4 +154,4 @@ const main = () => {
   )
 }
 
-export default main
+export default Home;
