@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/footer.sass";
+
 import { FaRegCopyright } from "react-icons/fa";
 
 const Footer = () => {
