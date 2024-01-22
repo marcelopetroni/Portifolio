@@ -14,7 +14,7 @@
 ![Captura de tela 2024-01-21 232744](https://github.com/marcelopetroni/Portifolio/assets/105806830/794dd871-dfdb-4fc0-8738-eb8bc32db038)
 
 
-- Acesse meu projeto pelo link: (https://portifolio-marcelo-jade.vercel.app/
+- Acesse meu projeto pelo link: https://portifolio-marcelo-jade.vercel.app/
 - Projeto React + Vite para exibir meus projetos, skills e contatos para fins profissionais.
 
 ### Built With
