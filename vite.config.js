@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(), sass()], 
   build: {
     rollupOptions: {
-      external: ['/src/styles/footer.sass'], // Adicione o caminho correto
+      external: ['/src/styles/footer.sass', "/src/styles/card.sass", "/src/styles/home.sass", "/src/styles/header.sass"], 
     },
   },
 })
