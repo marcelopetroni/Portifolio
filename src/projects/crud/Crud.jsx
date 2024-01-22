@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/Card.sass';
+import '../../components/Card.sass';
 import background from './crud.png';
 
 const Crud = () => {

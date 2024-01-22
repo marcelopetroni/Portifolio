@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/Home.sass";
+import "./Home.sass";
 import { MdEmail } from "react-icons/md";
 import { PiMicrosoftOutlookLogoFill } from "react-icons/pi";
 import { FaGithubSquare } from "react-icons/fa";
