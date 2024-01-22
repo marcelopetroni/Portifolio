@@ -1,5 +1,5 @@
 import React from 'react';
-import './headerStyle.sass';
+import '../styles/Header.sass';
 import { TfiLinkedin } from "react-icons/tfi";
 import { SiGmail } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
