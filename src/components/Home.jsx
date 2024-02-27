@@ -39,7 +39,7 @@ const Home = () => {
             </div>
           <h3 className='descricao'>I turn code in responsive interfaces</h3>
           <p className='descricao2'>I'm currently a Computer Science student and 
-          I aim to become a great Front-end developer and hopeful achieve all my goals in life, and of course, be happy along the way.</p>
+          I aim to become a great web developer and hopeful achieve all my goals in life, and of course, be happy along the way.</p>
         </div>
         <div className="icon-container">
           <h1 className='sombra'>M</h1>
