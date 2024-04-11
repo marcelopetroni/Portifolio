@@ -114,6 +114,10 @@ const Home = () => {
           <div className="percentage-container"><div className="percentage data"></div></div>
         </div>
         <div className='skill'>
+          <h4>SQL</h4>
+          <div className="percentage-container"><div className="percentage SQL"></div></div>
+        </div>
+        <div className='skill'>
           <h4>OO Programing</h4>
           <div className="percentage-container"><div className="percentage programing"></div></div>
         </div>
