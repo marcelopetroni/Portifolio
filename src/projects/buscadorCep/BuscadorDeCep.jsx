@@ -9,7 +9,7 @@ const BuscadorDecCep = () => {
       <div className="img">
         <img src={background} alt="ZIP code engine image" className='imagem'/>
       </div>
-      <p className="job">React.js project for a ZIP code search engine that returns the requested location through an Api.</p>
+      <p className="job">React.js project for a ZIP code search Api that returns the requested location.</p>
       <div className="buttons">
         <button><a href="https://github.com/marcelopetroni/BuscadorCepReact" target='_blank'>Repository</a></button>
         <button><a href="https://buscador-cep-react-phi.vercel.app/" target='_blank'>Deploy</a></button>

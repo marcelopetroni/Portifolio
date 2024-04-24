@@ -133,25 +133,25 @@ const Home = () => {
       <h2 ref={contactsRef} id = "contacts" className='projects-title' style={{ opacity: contactsInView ? 1 : 0, animation: contactsInView ? 'fade 2s ease' : '' }}>Contacts</h2>
       <section className='contacts-container' ref={contactsRef} style={{ opacity: contactsInView ? 1 : 0, animation: contactsInView ? 'fade 2s ease' : '' }}>
         <div className="contact">
-          <IoPerson /> <h4>Marcelo Petroni</h4>
+          <IoPerson /> <p>Marcelo Petroni</p>
         </div>
         <div className="contact">
-          <FaLocationDot /><h4>Recife - PE</h4>
+          <FaLocationDot /><p>Recife - PE</p>
         </div>
         <div className="contact">
-          <MdEmail /> <h4>marceloapetroni@gmail.com</h4>
+          <MdEmail /> <p>marceloapetroni@gmail.com</p>
         </div>
         <div className="contact">
-          <PiMicrosoftOutlookLogoFill /> <h4>marceloapetroni@hotmail.com</h4>
+          <PiMicrosoftOutlookLogoFill /> <p>marceloapetroni@hotmail.com</p>
         </div>
         <div className="contact">
-          <IoLogoWhatsapp /> <h4>(81) 99915-8289 </h4>
+          <IoLogoWhatsapp /> <p>(81) 99915-8289 </p>
         </div>
         <div className="contact">
-          <BsLinkedin /> <h4>https://www.linkedin.com/in/marcelo-nunes-a8b7a223a/</h4>
+          <BsLinkedin /> <p>https://www.linkedin.com/in/marcelo-nunes-a8b7a223a/</p>
         </div>
         <div className="contact">
-          <FaGithubSquare /> <h4>https://github.com/marcelopetroni</h4>
+          <FaGithubSquare /> <p>https://github.com/marcelopetroni</p>
         </div>
       </section>
     </main>
