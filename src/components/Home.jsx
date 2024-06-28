@@ -8,10 +8,15 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoPerson } from "react-icons/io5";
 import { BsLinkedin } from "react-icons/bs";
 import Card from './Card';
-import BuscadorDecCep from '../projects/buscadorCep/BuscadorDeCep';
+import EducaLivros from '../projects/educaLivros';
+import MedPlus from '../projects/medPlus';
+import RotaCulturalWeb from '../projects/rotaCulturalWeb';
+import RotaCulturalMobile from '../projects/rotaCulturalMobile';
+import CadastroUsuario from '../projects/cadastroUsuario';
+import BuscadorDeCep from '../projects/buscadorCep';
 import Crud from '../projects/crud/Crud';
-import Landingpage from '../projects/landingPage/Landingpage';
-import TodoList from '../projects/todoList/TodoList';
+import Landingpage from '../projects/landingPage';
+import TodoList from '../projects/todoList';
 import { useInView } from 'react-intersection-observer'; // para lidar com a animação de fade
 import 'intersection-observer'; // biblioteca para ter suporte em todos os navegadores
 
@@ -50,9 +55,14 @@ const Home = () => {
       <section ref={projectsRef} className="projects-container" style={{ opacity: projectsInView ? 1 : 0, animation: projectsInView ? 'fade 2s ease' : '' }}>
         <div className="cards-container">
           <Card content = {<Crud/>}/>
+          <Card content = {<MedPlus/>}/>
+          <Card content = {<EducaLivros/>}/>
+          <Card content = {<RotaCulturalWeb/>}/>
+          <Card content = {<RotaCulturalMobile/>}/>
           <Card content = {<TodoList/>}/>
-          <Card content = {<BuscadorDecCep/>}/>
+          <Card content = {<BuscadorDeCep/>}/>
           <Card content = {<Landingpage/>}/>
+          <Card content = {<CadastroUsuario/>}/>
         </div>
       </section>
       <h2 ref={skillsRef} id = "skills" className='projects-title' style={{ opacity: skillsInView ? 1 : 0, animation: skillsInView ? 'fade 2s ease' : '' }}>Skills</h2>    
@@ -114,7 +124,7 @@ const Home = () => {
           <div className="percentage-container"><div className="percentage data"></div></div>
         </div>
         <div className='skill'>
-          <h4>SQL</h4>
+          <h4>SQL/PostgreSql</h4>
           <div className="percentage-container"><div className="percentage SQL"></div></div>
         </div>
         <div className='skill'>
@@ -124,6 +134,10 @@ const Home = () => {
         <div className='skill'>
           <h4>English</h4>
           <div className="percentage-container"><div className="percentage english"></div></div>
+        </div>
+        <div className='skill'>
+          <h4>Kotlin</h4>
+          <div className="percentage-container"><div className="percentage kotlin"></div></div>
         </div>
         <div className='skill'>
           <h4>Excel</h4>

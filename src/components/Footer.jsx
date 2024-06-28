@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
         <FaRegCopyright className='icon'/>
-        <h4>Created by marcelopetroni - Front-end Developer</h4>
+        <h4>Created by marcelopetroni - Web Developer</h4>
     </footer>
   );
 };
