@@ -1,96 +1,121 @@
 @import variaveis
 
 *
-    margin: 0
-    padding: 0
+  margin: 0
+  padding: 0
 
 html 
   scroll-behavior: smooth
 
 body
-    height: 100vh
-    box-sizing: border-box
-    font-size: $base-font-size
+  height: 100vh
+  box-sizing: border-box
+  font-size: $base-font-size
 
 .header-container
-    background-color: transparent
-    overflow-x: hidden
-    width: 100%
-    height: 100px
-    margin: 0
-    top: 0
-    left: 0
-    display: flex
-    justify-content: space-between
-    align-items: center
+  background-color: transparent
+  overflow-x: hidden
+  width: 100%
+  height: 100px
+  margin: 0
+  top: 0
+  left: 0
+  display: flex
+  justify-content: space-between
+  align-items: center
 
 .tres-barras-container
-        display: flex
-        flex-direction: column // as divs de barra ficam em coluna um abaixo do outro
-        margin-left: 1rem 
-        height: 25px
-        width: 35px
-        background-color: transparent 
-        margin-right: auto // empurra div para o final (à esquerda) do meu container
-        cursor: pointer
-        .barra
-            background-color: #253b46
-            color: #253b46
-            margin: 2px auto
-            height: 4px
-            width: 100%
-            border-radius: 5px
+  display: flex
+  flex-direction: column
+  margin-left: 1rem 
+  height: 25px
+  width: 35px
+  background-color: transparent 
+  margin-right: auto
+  cursor: pointer
 
-.nav-container
-    margin-left: 2.8rem
-    padding-left: 2rem
-    display: none
+  .barra
+    background-color: #253b46
+    color: #253b46
+    margin: 2px auto
+    height: 4px
+    width: 100%
+    border-radius: 5px
 
-.nav-container a
+.sidebar
+  position: fixed
+  top: 0
+  left: -50%
+  width: 50%
+  height: 100%
+  background-color: #f0f0f0
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  transition: left 0.3s ease-in-out
+  z-index: 1000
+
+  &.visible
+    left: 0
+
+  .close-btn
+    position: absolute
+    top: 20px
+    right: 20px
+    font-size: 1.5rem
+    color: #253b46
+    cursor: pointer
+
+  a
     color: #253b46
     text-shadow: 1px 3px 8px rgba(0,0,0,0.1)
     font-family: 'Manrope', sans-serif
-    margin: 0px 15px 0px 15px
+    margin: 15px 0
     text-decoration: none
+    font-size: 1.2rem
 
     &:hover
-        cursor: pointer
-        text-decoration: underline
+      cursor: pointer
+      text-decoration: underline
 
 .social-icons-container
-    display: flex
-    margin-left: auto // empurra div para o final (à direita) do meu container
-    margin-right: 1.5rem
-    align-items: center
-    gap: 18px
-    button
-        background: transparent
-        border: none
-        outline: none
+  display: flex
+  margin-left: auto
+  margin-right: 1.5rem
+  align-items: center
+  gap: 18px
 
-.gmail-button
+  button
+    background: transparent
+    border: none
+    outline: none
+
+  .gmail-button
     font-size: 1.8rem
     color: #253b46
     display: flex
     align-items: center
     justify-content: center
     transition: transform 0.3s ease
-    &:hover
-        cursor: pointer
-        transform: scale(1.05)
 
-.github-button
+    &:hover
+      cursor: pointer
+      transform: scale(1.05)
+
+  .github-button
     font-size: 1.8rem
     color: #253b46
     display: flex
     align-items: center
     justify-content: center
     transition: transform 0.3s ease
-    &:hover
-        cursor: pointer
-        transform: scale(1.05)
 
-.linkedin-button
+    &:hover
+      cursor: pointer
+      transform: scale(1.05)
+
+  .linkedin-button
     display: flex
     align-items: center
     justify-content: center
@@ -98,130 +123,126 @@ body
     font-size: 1.8rem
     color: #253b46
     transition: transform 0.3s ease
+
     &:hover
-        cursor: pointer
-        transform: scale(1.05)
+      cursor: pointer
+      transform: scale(1.05)
 
 @media screen and (max-width: $xxs)
-    .nav-container
-        display: none
-    .social-icons-container
-        margin-right: 0.5rem
-    .gmail-button
-        font-size: 1.8rem
-    .github-button
-        font-size: 1.8rem
-    .linkedin-button
-        font-size: 1.8rem
+  .nav-container
+    display: none
+  .social-icons-container
+    margin-right: 0.5rem
+  .gmail-button
+    font-size: 1.8rem
+  .github-button
+    font-size: 1.8rem
+  .linkedin-button
+    font-size: 1.8rem
 
 @media screen and (min-width: $xs)
-    .nav-container
-        display: none
-    .gmail-button
-        font-size: 1.8rem
-    .github-button
-        font-size: 1.8rem
-    .linkedin-button
-        font-size: 1.8rem
+  .nav-container
+    display: none
+  .gmail-button
+    font-size: 1.8rem
+  .github-button
+    font-size: 1.8rem
+  .linkedin-button
+    font-size: 1.8rem
 
 @media screen and (min-width: $s)
-    .tres-barras-container
-        display: none
-    .nav-container
-        display: flex
-        font-size: 1rem
-    .social-icons-container
-        margin-right: 2rem
-    .gmail-button
-        font-size: 1.8rem
-    .github-button
-        font-size: 1.8rem
-    .linkedin-button
-        font-size: 1.8rem
+  .tres-barras-container
+    display: none
+  .nav-container
+    display: flex
+    font-size: 1rem
+  .social-icons-container
+    margin-right: 2rem
+  .gmail-button
+    font-size: 1.8rem
+  .github-button
+    font-size: 1.8rem
+  .linkedin-button
+    font-size: 1.8rem
 
 @media screen and (min-width: $m)
-    .tres-barras-container
-        display: none
-    .nav-container
-        display: flex
-        font-size: 1.05rem
-    .social-icons-container
-        margin-right: 2rem
-    .gmail-button
-        font-size: 1.8rem
-    .github-button
-        font-size: 1.8rem
-    .linkedin-button
-        font-size: 1.8rem
+  .tres-barras-container
+    display: none
+  .nav-container
+    display: flex
+    font-size: 1.05rem
+  .social-icons-container
+    margin-right: 2rem
+  .gmail-button
+    font-size: 1.8rem
+  .github-button
+    font-size: 1.8rem
+  .linkedin-button
+    font-size: 1.8rem
 
 @media screen and (min-width: $l)
-    .tres-barras-container
-        display: none
-    .nav-container
-        display: flex
-        font-size: 1.05rem
-    .social-icons-container
-        margin-right: 3rem
-    .gmail-button
-        font-size: 1.8rem
-    .github-button
-        font-size: 1.8rem
-    .linkedin-button
-        font-size: 1.8rem
+  .tres-barras-container
+    display: none
+  .nav-container
+    display: flex
+    font-size: 1.05rem
+  .social-icons-container
+    margin-right: 3rem
+  .gmail-button
+    font-size: 1.8rem
+  .github-button
+    font-size: 1.8rem
+  .linkedin-button
+    font-size: 1.8rem
 
 @media screen and (min-width: $xl)
-    .tres-barras-container
-        display: none
-    .nav-container
-        display: flex
-        font-size: 1.1rem
-    .social-icons-container
-        margin-right: 3.5rem
-    .gmail-button
-        font-size: 2rem
-    .github-button
-        font-size: 2rem
-    .linkedin-button
-        font-size: 2rem
+  .tres-barras-container
+    display: none
+  .nav-container
+    display: flex
+    font-size: 1.1rem
+  .social-icons-container
+    margin-right: 3.5rem
+  .gmail-button
+    font-size: 2rem
+  .github-button
+    font-size: 2rem
+  .linkedin-button
+    font-size: 2rem
 
 @media screen and (min-width: $xxl)
-    .tres-barras-container
-        display: none
-    .nav-container
-        display: flex
-        font-size: 1.25rem
-        margin-left: 3.5rem
-    .social-icons-container
-        margin-right: 4rem
-        gap: 22px
-    .gmail-button
-        font-size: 2.3rem
-    .github-button
-        font-size: 2.3rem
-    .linkedin-button
-        font-size: 2.3rem
+  .tres-barras-container
+    display: none
+  .nav-container
+    display: flex
+    font-size: 1.25rem
+    margin-left: 3.5rem
+  .social-icons-container
+    margin-right: 4rem
+    gap: 22px
+  .gmail-button
+    font-size: 2.3rem
+  .github-button
+    font-size: 2.3rem
+  .linkedin-button
+    font-size: 2.3rem
 
 @media screen and (min-width: $xxxl)
-    .tres-barras-container
-        display: none
-    .nav-container
-        display: flex
-        font-size: 1.75rem
-        margin-left: 3.5rem
-    .header-container
-        padding: 2rem 1rem 2rem 1rem
-    .social-icons-container
-        margin-right: 4rem
-        gap: 25px
-    .gmail-button
-        font-size: 3.5rem
-    .github-button
-        font-size: 3.5rem
-    .linkedin-button
-        padding-bottom: 0.5rem
-        font-size: 3.5rem
-
-
-
-
-
+  .tres-barras-container
+    display: none
+  .nav-container
+    display: flex
+    font-size: 1.75rem
+    margin-left: 3.5rem
+  .header-container
+    padding: 2rem 1rem 2rem 1rem
+  .social-icons-container
+    margin-right: 4rem
+    gap: 25px
+  .gmail-button
+    font-size: 3.5rem
+  .github-button
+    font-size: 3.5rem
+  .linkedin-button
+    padding-bottom: 0.5rem
+    font-size: 3.5rem
