@@ -10,6 +10,8 @@ import { BsLinkedin } from "react-icons/bs";
 import Card from './Card';
 import EducaLivros from '../projects/educaLivros';
 import MedPlus from '../projects/medPlus';
+import Rec081 from '../projects/rec081';
+import RedeRecife from '../projects/redeRecife';
 import RotaCulturalWeb from '../projects/rotaCulturalWeb';
 import RotaCulturalMobile from '../projects/rotaCulturalMobile';
 import CadastroUsuario from '../projects/cadastroUsuario';
@@ -54,11 +56,13 @@ const Home = () => {
       <h2 ref={projectsRef} id = "projects" className='projects-title' style={{ opacity: projectsInView ? 1 : 0, animation: projectsInView ? 'fade 2s ease' : '' }}>Projects</h2>
       <section ref={projectsRef} className="projects-container" style={{ opacity: projectsInView ? 1 : 0, animation: projectsInView ? 'fade 2s ease' : '' }}>
         <div className="cards-container">
-          <Card content = {<Crud/>}/>
+          <Card content = {<Rec081/>}/>
           <Card content = {<MedPlus/>}/>
+          <Card content = {<Crud/>}/>
           <Card content = {<EducaLivros/>}/>
-          <Card content = {<RotaCulturalWeb/>}/>
+          <Card content = {<RedeRecife/>}/>
           <Card content = {<RotaCulturalMobile/>}/>
+          <Card content = {<RotaCulturalWeb/>}/>
           <Card content = {<TodoList/>}/>
           <Card content = {<BuscadorDeCep/>}/>
           <Card content = {<Landingpage/>}/>
