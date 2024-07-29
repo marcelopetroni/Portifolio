@@ -34,6 +34,13 @@ const Header = () => {
         <a href="#contacts" onClick={closeSidebar}>Contacts</a>
       </div>
       
+      <div className="nav-container">
+        <a href="#about" onClick={closeSidebar}>About</a>
+        <a href="#projects" onClick={closeSidebar}>Projects</a>
+        <a href="#skills" onClick={closeSidebar}>Skills</a>
+        <a href="#contacts" onClick={closeSidebar}>Contacts</a>
+      </div>
+
       <div className="social-icons-container">
         <button>
           <a className='linkedin-button' href='https://www.linkedin.com/in/marcelo-nunes-a8b7a223a/' target="_blank"><TfiLinkedin/></a>
